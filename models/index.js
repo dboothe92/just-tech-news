@@ -4,7 +4,7 @@ const Vote = require('./Vote');
 const Comment = require('./Comments');
 
 User.hasMany(Post, {
-    foreign_key: 'user_id'
+    foreignKey: 'user_id'
 });
 
 Post.belongsTo(User, {
